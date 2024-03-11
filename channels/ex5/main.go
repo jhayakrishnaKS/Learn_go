@@ -6,14 +6,14 @@ import (
 
 func main() {
 	c := make(chan int)
-	go func ()  {
-	c<-42	
+	go func() {
+		c <- 42
 	}()
-	v, ok :=<-c
+	v, ok := <-c
 	fmt.Println(v, ok)
 
 	close(c)
-	
-	v, ok =<-c
+
+	v, ok = <-c
 	fmt.Println(v, ok)
 }

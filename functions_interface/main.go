@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strings"
 	// "math"
 	// "time"
 	// "log"
@@ -20,19 +21,19 @@ import (
 // }
 
 // ex2
-func foo(i ...int)int{
-   t :=0
-   for _,v:=range i{
-       t+=v
-   }
-   return t
+func foo(i ...int) int {
+	t := 0
+	for _, v := range i {
+		t += v
+	}
+	return t
 }
 func bar(x []int) int {
-    t := 0
-    for i := 0; i < len(x); i++ {
-        t += x[i]
-    }
-    return t
+	t := 0
+	for i := 0; i < len(x); i++ {
+		t += x[i]
+	}
+	return t
 }
 
 // ex4
@@ -171,8 +172,8 @@ func main() {
 	// fmt.Println(bar())
 
 	// ex2 vardiadic func
-	x:=[]int{1,2,34,5,6,7,8}
-	fmt.Println(foo(x ...))
+	x := []int{1, 2, 34, 5, 6, 7, 8}
+	fmt.Println(foo(x...))
 	fmt.Println(bar(x))
 
 	// ex3 defer

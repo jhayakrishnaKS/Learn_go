@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-
 	// "golang.org/x/text/width"
 )
 
@@ -18,22 +17,24 @@ import (
 // 	n[s] = 90
 // }
 
-type dog struct{
+type dog struct {
 	first string
 }
 
-func(d dog)walk(){
-	fmt.Println("may name is",d.first,"and i'm walking")
+func (d dog) walk() {
+	fmt.Println("may name is", d.first, "and i'm walking")
 }
-func(d *dog)run(){
-	d.first="rover"
-	fmt.Println("may name is",d.first,"and i'm running")
+func (d *dog) run() {
+	d.first = "rover"
+	fmt.Println("may name is", d.first, "and i'm running")
 }
-type youngIn interface{
+
+type youngIn interface {
 	walk()
 	run()
 }
-func youngRun(y youngIn){
+
+func youngRun(y youngIn) {
 	y.run()
 }
 
@@ -79,12 +80,11 @@ func main() {
 	// addOneP(&a)
 	// fmt.Println(a)
 
-	d1:=dog{"terry"}
+	d1 := dog{"terry"}
 	d1.walk()
-	d1.run() 
+	d1.run()
 
-
-	d2:=&dog{"nicey"}
+	d2 := &dog{"nicey"}
 	d2.walk()
 	d2.run()
 	youngRun(d2)

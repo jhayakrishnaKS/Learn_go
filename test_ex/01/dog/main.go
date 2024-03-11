@@ -14,4 +14,3 @@ func YearTwo(n int) int {
 func Years(n int) int {
 	return n * 7
 }
-

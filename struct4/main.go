@@ -1,7 +1,7 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 // type person struct {
@@ -25,7 +25,7 @@ import (
 // 	electric bool
 // }
 // type vechicle struct{
-// 	engine 
+// 	engine
 // 	make string
 // 	model string
 //     doors int
@@ -33,42 +33,41 @@ import (
 // }
 
 func main() {
-    // p1 := person{
-    //     first: "james",
-    //     last:  "harpert",
-    //     age:   28,
-    // }
-    // p2 := person{
-    //     first: "dwight",
-    //     last:  "schrute",
-    //     age:   29,
-    // }
-    // fmt.Println(p1.first)
-    // fmt.Println(p2.last)
+	// p1 := person{
+	//     first: "james",
+	//     last:  "harpert",
+	//     age:   28,
+	// }
+	// p2 := person{
+	//     first: "dwight",
+	//     last:  "schrute",
+	//     age:   29,
+	// }
+	// fmt.Println(p1.first)
+	// fmt.Println(p2.last)
 
 	//embedded struct
 	// p1 := agent{
 	// 	person:person{
 	// 	first: "james",
-    //     last:  "harpert",
-    //     age:   28,
+	//     last:  "harpert",
+	//     age:   28,
 	// 	},
-	// 	lkt:true,     
-    // }
+	// 	lkt:true,
+	// }
 	// fmt.Println(p1)
 	// fmt.Println(p1.first,p1.last,p1.age,p1.lkt)
-
 
 	//anonymous struct
 	// p1:=struct{
 	// 	first string
-    //     last  string
-    //     age   int
+	//     last  string
+	//     age   int
 	// }{
 	// 	first: "james",
-    //     last:  "harpert",
-    //     age:   28,
-    // }
+	//     last:  "harpert",
+	//     age:   28,
+	// }
 	// fmt.Printf("%T",p1)
 
 	// ex1
@@ -143,25 +142,24 @@ func main() {
 
 	// ex4
 	p1 := struct {
-        first     string
-        friends   map[string]int
-        favdrinks []string
-    }{
-        first: "jkay",
-        friends: map[string]int{
-            "rave": 1,
-            "zun":  2,
-        },
-        favdrinks: []string{"sx", "cranberry", "zx"},
-    }
+		first     string
+		friends   map[string]int
+		favdrinks []string
+	}{
+		first: "jkay",
+		friends: map[string]int{
+			"rave": 1,
+			"zun":  2,
+		},
+		favdrinks: []string{"sx", "cranberry", "zx"},
+	}
 
-    for k, v := range p1.friends {
-        fmt.Println(p1.first, "-friend-", k, ":", v)
-    }
+	for k, v := range p1.friends {
+		fmt.Println(p1.first, "-friend-", k, ":", v)
+	}
 
-    for _, v := range p1.favdrinks {
-        fmt.Println(p1.first, "-drinks-", v)
-    }
+	for _, v := range p1.favdrinks {
+		fmt.Println(p1.first, "-drinks-", v)
+	}
 
 }
-

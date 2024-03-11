@@ -9,7 +9,7 @@ func main() {
 	//send
 	go send(even, odd, quit)
 	//receive
-	receive(even,odd,quit)
+	receive(even, odd, quit)
 
 	fmt.Println("exit!!!!!!!!!!!!")
 }

@@ -21,10 +21,10 @@ func bar() {
 }
 
 func main() {
-	fmt.Println("OS\t",runtime.GOOS)
-	fmt.Println("Arch\t",runtime.GOARCH)
-	fmt.Println("CPUs\t",runtime.NumCPU())
-	fmt.Println("GoRoutines\t",runtime.NumGoroutine())
+	fmt.Println("OS\t", runtime.GOOS)
+	fmt.Println("Arch\t", runtime.GOARCH)
+	fmt.Println("CPUs\t", runtime.NumCPU())
+	fmt.Println("GoRoutines\t", runtime.NumGoroutine())
 
 	wg.Add(1)
 	go foo()
@@ -32,6 +32,6 @@ func main() {
 	bar()
 	wg.Wait()
 
-	fmt.Println("CPUs\t",runtime.NumCPU())
-	fmt.Println("GoRoutines\t",runtime.NumGoroutine())
+	fmt.Println("CPUs\t", runtime.NumCPU())
+	fmt.Println("GoRoutines\t", runtime.NumGoroutine())
 }

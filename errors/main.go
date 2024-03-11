@@ -127,10 +127,10 @@ func main() {
 
 func sqrt(f float64) (float64, error) {
 	if f < 0 {
-		e:=errors.New("need more error")
-		return 0,sqrtError{
+		e := errors.New("need more error")
+		return 0, sqrtError{
 			"50.2289 N",
-            "99.4656 W",
+			"99.4656 W",
 			e,
 		}
 	}

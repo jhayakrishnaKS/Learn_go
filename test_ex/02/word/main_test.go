@@ -7,24 +7,24 @@ import (
 )
 
 func TestUseCount(t *testing.T) {
-	n:=UseCount("one two three three")
-	for k,v:=range n{
-		switch k{
+	n := UseCount("one two three three")
+	for k, v := range n {
+		switch k {
 		case "one":
-			if v!=1{
+			if v != 1 {
 				t.Error("got", v, "want", 1)
 			}
 		case "two":
-			if v!=1{
+			if v != 1 {
 				t.Error("got", v, "want", 1)
 			}
 		case "three":
-			if v!=2{
+			if v != 2 {
 				t.Error("got", v, "want", 2)
 			}
 		}
 	}
-	
+
 }
 
 func TestCount(t *testing.T) {

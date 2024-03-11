@@ -1,25 +1,22 @@
 package main
 
-import (
-    "fmt"
-    // "math/rand"
-)
+// "math/rand"
+
 //ex3
 // func init(){
 // 	fmt.Println("this works before main")
 // }
 func main() {
 	// ex1
-    // x := rand.Intn(251)
-    // fmt.Printf("Value of x: %d\n", x)
-    // if x <= 100 {
-    //     fmt.Println("x is between 0 and 100")
-    // } else if x <= 200 {
-    //     fmt.Println("x is between 101 and 200")
-    // } else {
-    //     fmt.Println("x is between 201 and 250")
-    // }
-
+	// x := rand.Intn(251)
+	// fmt.Printf("Value of x: %d\n", x)
+	// if x <= 100 {
+	//     fmt.Println("x is between 0 and 100")
+	// } else if x <= 200 {
+	//     fmt.Println("x is between 101 and 200")
+	// } else {
+	//     fmt.Println("x is between 201 and 250")
+	// }
 
 	//ex2
 	// switch{
@@ -66,9 +63,9 @@ func main() {
 
 	// ex6
 	// x := 100
-    // for i := 0; i < x; i++ {
-    //     fmt.Println(i)
-    // }
+	// for i := 0; i < x; i++ {
+	//     fmt.Println(i)
+	// }
 
 	// for i := 0; i < 100; i++ {
 	// 	x:=rand.Intn(10)
@@ -87,7 +84,7 @@ func main() {
 	// 		default:
 	// 			fmt.Println("blahhhh")
 	// 		}
-    // }
+	// }
 
 	// ex7
 	// for i:=1;i<43;i++{
@@ -131,19 +128,19 @@ func main() {
 	// for i:=1;i<10;i++{
 	// 		if i%2==0{
 	// 			fmt.Printf("Even number %d\n",i)
-	
+
 	// 		}else{
 	// 			continue
 	// 		}
 	// 	}
 
 	// ex11
-    // for i := 1; i <= 5; i++ {
-    //     fmt.Printf("Outer loop iteration %d\n", i)
-    //     for j := 1; j <= 5; j++ {
-    //         fmt.Printf("\tInner loop iteration %d\n", j)
-    //     }
-    // }
+	// for i := 1; i <= 5; i++ {
+	//     fmt.Printf("Outer loop iteration %d\n", i)
+	//     for j := 1; j <= 5; j++ {
+	//         fmt.Printf("\tInner loop iteration %d\n", j)
+	//     }
+	// }
 
 	// ex12
 	// xi := []int{42, 43, 44, 45, 46, 47}
@@ -174,6 +171,3 @@ func main() {
 	//  fmt.Println(true || false)
 	// fmt.Println(!true)
 }
-
-
-

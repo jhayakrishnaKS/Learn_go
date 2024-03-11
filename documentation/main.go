@@ -17,4 +17,5 @@ func main() {
 	}
 	fmt.Println(fido)
 }
+
 // $ go doc fmt print

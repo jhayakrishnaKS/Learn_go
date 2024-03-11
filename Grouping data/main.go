@@ -152,9 +152,9 @@ func main() {
 	// ex16
 	y:=[]string{"ye","yezzy","west"}
 	z:=[]string{"drizzy","glizzy","marvin"}
-	fmt.Println(y)
+	fmt.Println(a)
 	fmt.Println(z)
-	yz:=[][]string{y,z}
+	yz:=[][]string{z}
 	fmt.Println(yz)
 	for i,v:=range yz{
 		fmt.Printf("index:%d\t value:%s\n",i,v)

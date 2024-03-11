@@ -9,7 +9,7 @@ func main() {
 	xxi := gen()
 	for _, v := range xxi {
 		fmt.Println(mymath.CenteredAvg(v))
-		
+
 	}
 }
 

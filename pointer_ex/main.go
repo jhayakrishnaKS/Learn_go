@@ -19,17 +19,18 @@ import "fmt"
 // 	d = &n
 // }
 
-// ex4 
-type person struct{
+// ex4
+type person struct {
 	first string
 }
-func changeName(p person,s string)person{
-	p.first=s
+
+func changeName(p person, s string) person {
+	p.first = s
 	return p
 }
 
-func changeNameP(p *person,s string){
-	p.first=s
+func changeNameP(p *person, s string) {
+	p.first = s
 }
 
 func main() {
@@ -59,18 +60,18 @@ func main() {
 	// youngRun(d2)
 
 	// ex4
-	p:=person{
+	p := person{
 		first: "krish",
 	}
 	fmt.Println(p)
-	fmt.Println(changeName(p,"jk"))
+	fmt.Println(changeName(p, "jk"))
 	fmt.Println(p)
 
-
-	changeNameP(&p,"jlo")
+	changeNameP(&p, "jlo")
 	fmt.Println(p)
 
 }
+
 //ex3
 // type dog struct {
 // 	first string

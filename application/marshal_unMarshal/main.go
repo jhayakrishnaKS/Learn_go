@@ -31,7 +31,7 @@ func main() {
 		fmt.Println("error:", err)
 	}
 	os.Stdout.Write(b)
-	fmt.Println("\n",string(b))
+	fmt.Println("\n", string(b))
 
 	//json unmarshal
 	var jsonBlob = []byte(`[

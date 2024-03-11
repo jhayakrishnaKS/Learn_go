@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"common/test_ex/01/dog"
+	"fmt"
 )
 
 type canine struct {

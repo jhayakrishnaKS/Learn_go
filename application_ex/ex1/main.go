@@ -30,11 +30,11 @@ func main() {
 	users := []user{u1, u2, u3}
 
 	fmt.Println(users)
-	a,err:=json.Marshal(users)
+	a, err := json.Marshal(users)
 	if err != nil {
 		fmt.Println("error:", err)
 	}
 	os.Stdout.Write(a)
-	fmt.Println("\n",string(a))
+	fmt.Println("\n", string(a))
 
 }

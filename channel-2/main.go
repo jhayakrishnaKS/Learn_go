@@ -10,9 +10,9 @@ func main() {
 	// var wg sync.WaitGroup
 	// wg.Add(2)
 	done := make(chan bool)
-	n:=2
+	n := 2
 
-	for i:=0;i<=n;i++{
+	for i := 0; i <= n; i++ {
 		go func() {
 			for i := 0; i < 10; i++ {
 				c <- i
@@ -20,11 +20,9 @@ func main() {
 			// wg.Done()
 			done <- true
 		}()
-	
-	
+
 	}
 
-	
 	// go func() {
 	// 	for i := 0; i < 10; i++ {
 	// 		c <- i

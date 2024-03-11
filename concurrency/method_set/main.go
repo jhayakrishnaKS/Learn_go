@@ -53,7 +53,7 @@ func main() {
 	}
 
 	// Wait for all goroutines to finish
-	wg.Wait() 
+	wg.Wait()
 
 	// Print the final value of the counter
 	fmt.Println("count:", counter)
