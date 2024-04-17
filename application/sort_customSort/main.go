@@ -5,7 +5,7 @@ import (
 	"sort"
 )
 
-//custom sort
+// custom sort
 type person struct {
 	first string
 	age   int

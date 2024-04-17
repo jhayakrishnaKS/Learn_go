@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-//table test
+// table test
 func TestSum(t *testing.T) {
 
 	type test struct {

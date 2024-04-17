@@ -25,12 +25,12 @@ func main() {
 
 }
 
-//send
+// send
 func foo(c chan<- int) {
 	c <- 42
 }
 
-//receive
+// receive
 func bar(c <-chan int) {
 	fmt.Println(<-c)
 }
